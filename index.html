@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Better Details · PPF, ceramic coating and tint, Parañaque (concept)</title>
+<meta name="description" content="Concept redesign: paint protection film, ceramic coating, window tint and high-level detailing at 19 Michael Rua St., Brgy. Don Bosco, Parañaque.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+html,body{background:#0b0d10;color:#f3f5f7}
+:root{
+  --carbon:#0b0d10;--carbon-2:#12151a;--steel:#1c2128;--steel-2:#262c35;
+  --white:#f3f5f7;--white-72:rgba(243,245,247,.74);--white-50:rgba(243,245,247,.52);
+  --line:rgba(243,245,247,.11);
+  --amber:#ff8a1f;--amber-2:#ffb066;--amber-ink:#1d0e00;
+  --col:min(1240px,100% - 2*clamp(20px,4vw,48px));
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
+body{font:400 17px/1.65 Archivo,"Helvetica Neue",Arial,sans-serif;font-stretch:100%}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+::selection{background:rgba(255,138,31,.35)}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{width:var(--col);margin-inline:auto}
+.mono{font:500 12px/1.2 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase}
+.disp{font-family:Archivo,"Arial Black",sans-serif;font-stretch:125%;font-weight:900;text-transform:uppercase;letter-spacing:-.01em;line-height:.94}
+.btn{display:inline-flex;align-items:center;gap:14px;min-height:56px;padding:8px 8px 8px 24px;font:800 14px/1 Archivo,sans-serif;font-stretch:112%;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;clip-path:polygon(0 0,100% 0,100% 70%,calc(100% - 14px) 100%,0 100%);transition:background-color .25s,color .25s,transform .2s}
+.btn i{display:grid;place-items:center;width:40px;height:40px}
+.btn svg{width:18px;height:18px}
+.btn--amber{background:var(--amber);color:var(--amber-ink)}.btn--amber i{background:var(--amber-ink);color:var(--amber)}
+.btn--amber:hover{background:var(--amber-2)}
+.btn--ghost{background:var(--steel);color:var(--white)}.btn--ghost i{background:var(--steel-2);color:var(--amber)}
+.btn--ghost:hover{background:var(--steel-2)}
+.btn:active{transform:scale(.97)}
+.js [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
+.js [data-reveal].is-in{opacity:1;transform:none}
+
+/* ribbon + header */
+.ribbon{background:var(--amber);color:var(--amber-ink);font:600 13px/1.4 Archivo,sans-serif;text-align:center;padding:8px 16px}
+.head{width:var(--col);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;height:84px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo svg{width:38px;height:38px}
+.logo b{display:block;font:900 22px/1 Archivo,sans-serif;font-stretch:125%;letter-spacing:-.01em;text-transform:uppercase}
+.logo small{display:block;margin-top:4px;font:500 10px/1 "JetBrains Mono",monospace;letter-spacing:.2em;color:var(--white-50);text-transform:uppercase}
+.nav{display:flex;gap:6px;list-style:none}
+.nav a{display:inline-flex;align-items:center;height:40px;padding:0 14px;text-decoration:none;font:500 12px/1 "JetBrains Mono",monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--white-72);border:1px solid transparent;transition:color .2s,border-color .2s}
+.nav a:hover{color:var(--white);border-color:var(--line)}
+.head .btn{min-height:46px;padding-left:18px}.head .btn i{width:32px;height:32px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;border-top:1px solid var(--line);background:
+  repeating-linear-gradient(45deg,rgba(243,245,247,.022) 0 2px,transparent 2px 6px),
+  repeating-linear-gradient(-45deg,rgba(243,245,247,.022) 0 2px,transparent 2px 6px),var(--carbon)}
+.hero__in{width:var(--col);margin:0 auto;display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(24px,3vw,48px);align-items:center;min-height:min(calc(100vh - 118px),760px);padding:clamp(40px,5vw,64px) 0}
+.chip{display:inline-flex;align-items:center;gap:10px;height:34px;padding:0 14px;border:1px solid rgba(255,138,31,.45);background:rgba(255,138,31,.07);color:var(--amber-2)}
+.chip::before{content:"";width:7px;height:7px;background:var(--amber);box-shadow:0 0 10px var(--amber)}
+.hero h1{font-size:clamp(44px,5.6vw,92px);margin-top:26px}
+.hero h1 span{display:block}
+.hero h1 .a{color:var(--amber);-webkit-text-stroke:0}
+.hero h1 .o{color:transparent;-webkit-text-stroke:2px var(--white)}
+.hero .sub{max-width:33rem;margin-top:26px;font-size:clamp(17px,1.25vw,19px);color:var(--white-72)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+
+/* the bay (signature) */
+.bay{position:relative;aspect-ratio:1/0.66;clip-path:polygon(9% 0,100% 0,100% 100%,0 100%);background:radial-gradient(120% 80% at 60% 20%,#232a33 0%,#14181d 55%,#0d1014 100%);touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.bay::before{content:"";position:absolute;left:0;right:0;top:8%;height:30%;background:linear-gradient(180deg,rgba(255,255,255,.07),transparent);clip-path:polygon(18% 0,82% 0,96% 100%,4% 100%)}
+.bay__led{position:absolute;left:28%;right:34%;top:13%;height:6px;border-radius:3px;background:#f3f5f7;box-shadow:0 0 24px 6px rgba(243,245,247,.35),0 0 80px 20px rgba(243,245,247,.08)}
+.bay__floor{position:absolute;left:0;right:0;bottom:0;height:32%;background:linear-gradient(180deg,#191d23,#0c0e11);border-top:1px solid rgba(255,255,255,.06)}
+.bay__car{position:absolute;left:3%;right:2%;bottom:13%}
+.bay__car svg{width:100%;height:auto}
+.car-after{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--x,58%)) 0 0)}
+.squeegee{position:absolute;top:6%;bottom:6%;left:var(--x,58%);width:0;z-index:3}
+.squeegee::before{content:"";position:absolute;top:0;bottom:0;left:-1px;width:2px;background:linear-gradient(180deg,transparent,var(--amber) 12%,var(--amber) 88%,transparent);box-shadow:0 0 18px 2px rgba(255,138,31,.55)}
+.squeegee button{position:absolute;top:50%;left:0;transform:translate(-50%,-50%);width:54px;height:54px;border:0;background:var(--amber);color:var(--amber-ink);display:grid;place-items:center;cursor:ew-resize;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+.squeegee button svg{width:22px;height:22px}
+.bay__tag{position:absolute;top:18px;z-index:2;padding:7px 10px;background:rgba(11,13,16,.75);border:1px solid var(--line);color:var(--white-72)}
+.bay__tag--l{left:14%}.bay__tag--r{right:16px;color:var(--amber-2);border-color:rgba(255,138,31,.4)}
+.bay__cap{position:absolute;right:16px;bottom:14px;z-index:2;color:var(--white-50);font-size:11px}
+.bay__hint{position:absolute;left:12%;bottom:14px;z-index:2;color:var(--white-50);font-size:11px}
+
+/* ticker */
+.ticker{border-block:1px solid var(--line);background:var(--carbon-2);overflow:hidden}
+.ticker__t{display:flex;gap:42px;width:max-content;padding:20px 0;animation:tick 38s linear infinite}
+.ticker__t span{display:flex;align-items:center;gap:42px;font:900 clamp(20px,2vw,28px)/1 Archivo,sans-serif;font-stretch:125%;text-transform:uppercase;white-space:nowrap}
+.ticker__t span::after{content:"";width:12px;height:12px;background:var(--amber);transform:rotate(45deg)}
+.ticker__t span:nth-child(even){color:transparent;-webkit-text-stroke:1.4px var(--white-72)}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* sections */
+.sec{padding:clamp(88px,10vw,140px) 0}
+.kick{display:flex;align-items:center;gap:12px;color:var(--amber-2)}
+.kick::before{content:"";width:28px;height:2px;background:var(--amber)}
+.h2{font-size:clamp(38px,4.4vw,68px);margin-top:20px}
+.h2 .a{color:var(--amber)}
+
+/* services */
+.svc{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(36px,5vw,80px);align-items:start;margin-top:56px}
+.stack{position:sticky;top:40px;background:var(--carbon-2);border:1px solid var(--line);padding:28px 24px 22px}
+.stack svg{width:100%;height:auto}
+.stack figcaption{margin-top:18px;color:var(--white-50)}
+.legend{margin-top:22px;border-top:1px solid var(--line)}
+.legend div{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
+.legend dt{font:500 12px/1.6 "JetBrains Mono",monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--amber-2)}
+.legend dd{color:var(--white-72)}
+.list{list-style:none;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:64px 1fr;gap:6px 18px;padding:30px 0;border-bottom:1px solid var(--line)}
+.row .n{font:500 13px/1.6 "JetBrains Mono",monospace;color:var(--amber)}
+.row h3{font:900 clamp(24px,2.3vw,32px)/1 Archivo,sans-serif;font-stretch:118%;text-transform:uppercase;letter-spacing:-.01em}
+.row p{grid-column:2;color:var(--white-72);max-width:34rem}
+.row .q{grid-column:2;justify-self:start;margin-top:8px;color:var(--white-50)}
+.row:hover h3{color:var(--amber-2)}
+
+/* accredited */
+.acc{background:var(--carbon-2);border-block:1px solid var(--line)}
+.acc__g{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(32px,5vw,80px);align-items:center}
+.acc blockquote{font:500 clamp(22px,2.1vw,30px)/1.35 Archivo,sans-serif;color:var(--white);margin-top:22px}
+.acc cite{display:block;margin-top:16px;font-style:normal;color:var(--white-50)}
+.names{display:grid;grid-template-columns:repeat(2,1fr);border:1px solid var(--line)}
+.names li{list-style:none;display:flex;align-items:center;justify-content:center;min-height:120px;padding:18px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font:900 clamp(26px,2.6vw,38px)/1 Archivo,sans-serif;font-stretch:125%;text-transform:uppercase;letter-spacing:.02em;color:transparent;-webkit-text-stroke:1.4px var(--white-72);transition:color .25s,-webkit-text-stroke-color .25s}
+.names li:nth-child(2n){border-right:0}
+.names li:hover{color:var(--amber);-webkit-text-stroke-color:var(--amber)}
+.names li.full{grid-column:1/-1;border-right:0}
+.names li.wide{grid-column:1/-1;border-right:0;border-bottom:0;background:rgba(255,138,31,.06);color:var(--amber-2);-webkit-text-stroke:0;font:500 12px/1.5 "JetBrains Mono",monospace;letter-spacing:.14em;min-height:64px;text-align:center}
+
+/* how */
+.how{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,80px);align-items:center}
+.how figure{position:relative;clip-path:polygon(0 0,100% 0,100% 88%,88% 100%,0 100%);aspect-ratio:1/1.02;background:var(--steel)}
+.how img{width:100%;height:100%;object-fit:cover;object-position:40% 50%}
+.how figcaption{position:absolute;left:14px;bottom:14px;padding:7px 10px;background:rgba(11,13,16,.8);border:1px solid var(--line);color:var(--white-72)}
+.steps{list-style:none;margin-top:36px;counter-reset:s}
+.step{position:relative;display:grid;grid-template-columns:72px 1fr;gap:4px 18px;padding:24px 0;border-top:1px solid var(--line)}
+.step::before{counter-increment:s;content:"0" counter(s);grid-row:span 2;font:900 44px/1 Archivo,sans-serif;font-stretch:125%;color:transparent;-webkit-text-stroke:1.4px var(--amber)}
+.step h3{font:800 21px/1.2 Archivo,sans-serif;font-stretch:110%}
+.step p{color:var(--white-72);font-size:16px}
+
+/* find */
+.find__g{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,5vw,80px);align-items:stretch}
+.plate{position:relative;background:linear-gradient(135deg,#1a1f26,#101318);border:1px solid var(--line);padding:clamp(28px,3vw,44px);display:flex;flex-direction:column;justify-content:space-between;gap:28px;overflow:hidden;min-height:380px}
+.plate .num{font:900 clamp(120px,14vw,210px)/.8 Archivo,sans-serif;font-stretch:125%;color:transparent;-webkit-text-stroke:2px rgba(255,138,31,.75);letter-spacing:-.04em}
+.plate .st{font:900 clamp(26px,2.8vw,40px)/1 Archivo,sans-serif;font-stretch:118%;text-transform:uppercase}
+.plate .ar{color:var(--white-72);margin-top:8px;font-size:18px}
+.plate::after{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;border:1px solid rgba(255,138,31,.25);transform:rotate(45deg)}
+.find__r{display:flex;flex-direction:column;justify-content:center;gap:22px}
+.find__r p{color:var(--white-72)}
+
+/* contact */
+.contact{position:relative;background:var(--amber);color:var(--amber-ink);overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(29,14,0,.05) 0 2px,transparent 2px 7px)}
+.contact .wrap{position:relative}
+.contact .kick{color:var(--amber-ink)}.contact .kick::before{background:var(--amber-ink)}
+.contact .h2{font-size:clamp(46px,7vw,112px)}
+.contact .lead{max-width:36rem;margin-top:20px;font-size:18px;color:rgba(29,14,0,.8)}
+.links{display:grid;grid-template-columns:repeat(3,1fr);margin-top:48px;border-top:2px solid var(--amber-ink)}
+.links a{display:flex;flex-direction:column;gap:10px;padding:26px 24px 30px 0;text-decoration:none;border-right:2px solid rgba(29,14,0,.18)}
+.links a+a{padding-left:24px}
+.links a:last-child{border-right:0}
+.links a:hover span{text-decoration:underline;text-underline-offset:4px}
+.links small{font:500 12px/1 "JetBrains Mono",monospace;letter-spacing:.16em;text-transform:uppercase}
+.links span{font:800 clamp(17px,1.45vw,21px)/1.25 Archivo,sans-serif;font-stretch:100%;overflow-wrap:anywhere}
+.links svg{width:26px;height:26px}
+.ig{margin-top:22px;font:500 13px/1.4 "JetBrains Mono",monospace;letter-spacing:.06em}
+
+/* footer */
+.foot{padding:52px 0 56px;border-top:1px solid var(--line);color:var(--white-50);font-size:14px}
+.foot__in{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:24px}
+.foot p{margin-top:6px}
+.foot .nav{flex-wrap:wrap}
+
+.callbar{display:none}
+@media (max-width:759px){
+  .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));z-index:40;height:56px;align-items:center;justify-content:center;gap:10px;background:var(--amber);color:var(--amber-ink);text-decoration:none;font:900 15px/1 Archivo,sans-serif;font-stretch:118%;letter-spacing:.12em;clip-path:polygon(0 0,100% 0,100% 70%,calc(100% - 14px) 100%,0 100%);transition:transform .3s,opacity .3s}
+  .callbar svg{width:18px;height:18px}
+  .js .callbar.hide{transform:translateY(90px);opacity:0}
+  .foot{padding-bottom:100px}
+}
+@media (max-width:999px){
+  .head .nav{display:none}
+  .hero__in{grid-template-columns:1fr;min-height:0}
+  .bay{clip-path:polygon(6% 0,100% 0,100% 100%,0 100%)}
+  .svc,.acc__g,.how,.find__g{grid-template-columns:1fr}
+  .stack{position:static}
+}
+@media (max-width:599px){
+  .head{height:70px}
+  .head .btn span{display:none}.head .btn{padding-left:8px}
+  .logo small{display:none}
+  .hero h1{font-size:clamp(36px,11vw,52px)}
+  .hero h1 .o{-webkit-text-stroke-width:1.5px}
+  .bay{aspect-ratio:1/0.92}
+  .bay__hint{display:none}
+  .hide-s{display:none}
+  .bay__tag--l{left:12%}
+  .row{grid-template-columns:44px 1fr}
+  .names li{min-height:90px}
+  .links{grid-template-columns:1fr}
+  .links a,.links a+a{padding:20px 0;border-right:0;border-bottom:2px solid rgba(29,14,0,.18)}
+  .step{grid-template-columns:56px 1fr}
+  .step::before{font-size:34px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .js [data-reveal]{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="ribbon">Concept redesign by Jeig Torio · not the business's official website</div>
+
+<header class="head">
+  <a class="logo" href="#top" aria-label="Better Details, back to top">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 2 37 11v18L20 38 3 29V11z" fill="none" stroke="#ff8a1f" stroke-width="2.5"/><path d="M13 12h9a5 5 0 0 1 0 10h-9zM13 22h10a5 5 0 0 1 0 10H13z" fill="none" stroke="#f3f5f7" stroke-width="2.5" stroke-linejoin="round" transform="translate(0 -2) scale(1 .9)"/></svg>
+    <span><b>Better Details</b><small>PPF · Ceramic · Tint</small></span>
+  </a>
+  <nav aria-label="Main"><ul class="nav">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#accredited">Accredited</a></li>
+    <li><a href="#how">How it works</a></li>
+    <li><a href="#find">Find us</a></li>
+  </ul></nav>
+  <a class="btn btn--amber" href="tel:+639976888219"><span>Call now</span><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></i></a>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="hero-h">
+  <div class="hero__in">
+    <div>
+      <p class="chip mono" data-reveal>Don Bosco, Parañaque</p>
+      <h1 class="disp" id="hero-h" data-reveal><span>Protect</span><span class="o">the paint</span><span class="a">you paid for.</span></h1>
+      <p class="sub" data-reveal>Paint protection film, ceramic coating, window tint and high-level detailing, from our shop on Michael Rua Street in Better Living.</p>
+      <div class="ctas" id="heroCtas" data-reveal>
+        <a class="btn btn--amber" href="tel:+639976888219">Call 0997 688 8219<i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></i></a>
+        <a class="btn btn--ghost" href="#services">See services<i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></i></a>
+      </div>
+    </div>
+
+    <div class="bay" id="bay" style="--x:58%" role="group" aria-label="Before and after drawing of a car getting film, coating and tint. Drag the handle to compare.">
+      <div class="bay__led" aria-hidden="true"></div>
+      <div class="bay__floor"></div>
+      <span class="bay__tag bay__tag--l mono">Before</span>
+      <span class="bay__tag bay__tag--r mono">After<span class="hide-s"> · film, coat, tint</span></span>
+      <div class="bay__car">
+        <!-- before -->
+        <svg viewBox="0 0 800 330" aria-hidden="true">
+          <defs>
+            <linearGradient id="bBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a525c"/><stop offset="1" stop-color="#2c3138"/></linearGradient>
+          </defs>
+          <ellipse cx="410" cy="292" rx="360" ry="16" fill="#000" opacity=".55"/>
+          <path d="M60 238c0-30 22-44 62-48l118-10c48-40 100-66 178-70 80-3 140 18 192 62l92 14c40 6 58 26 58 54v18c0 8-8 14-16 14h-52a60 60 0 0 0-118 0H270a60 60 0 0 0-118 0H78c-10 0-18-7-18-16z" fill="url(#bBody)"/>
+          <path d="M262 182c42-36 90-58 152-60l8 60zM440 122c62 2 106 18 146 52l-146 8z" fill="#aab4bf" opacity=".62"/>
+          <path d="M80 232h660M330 182v80M560 186l-6 76" stroke="#22262c" stroke-width="2" fill="none"/>
+          <g fill="#c9ced4" opacity=".55"><circle cx="190" cy="226" r="1.6"/><circle cx="246" cy="246" r="1.3"/><circle cx="388" cy="212" r="1.5"/><circle cx="470" cy="250" r="1.2"/><circle cx="612" cy="220" r="1.6"/><circle cx="690" cy="238" r="1.3"/><circle cx="520" cy="204" r="1.1"/><circle cx="300" cy="222" r="1.4"/></g>
+          <path d="M150 214l40-8M600 212l34 6M420 240l30-4" stroke="#8a929b" stroke-width="1.2" opacity=".6"/>
+          <rect x="62" y="206" width="22" height="14" rx="3" fill="#7a3a12"/>
+          <path d="M724 212h26c4 0 6 4 4 8l-4 6h-26z" fill="#c9ced4" opacity=".7"/>
+          <g><circle cx="211" cy="278" r="50" fill="#16191d"/><circle cx="211" cy="278" r="30" fill="none" stroke="#5c646d" stroke-width="7"/><circle cx="211" cy="278" r="8" fill="#5c646d"/></g>
+          <g><circle cx="629" cy="278" r="50" fill="#16191d"/><circle cx="629" cy="278" r="30" fill="none" stroke="#5c646d" stroke-width="7"/><circle cx="629" cy="278" r="8" fill="#5c646d"/></g>
+        </svg>
+        <!-- after -->
+        <div class="car-after">
+        <svg viewBox="0 0 800 330" aria-hidden="true" style="position:absolute;inset:0">
+          <defs>
+            <linearGradient id="aBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b323b"/><stop offset=".35" stop-color="#0a0c0f"/><stop offset=".62" stop-color="#151a20"/><stop offset="1" stop-color="#050607"/></linearGradient>
+            <linearGradient id="aShine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+            <linearGradient id="aGlass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b2028"/><stop offset="1" stop-color="#040506"/></linearGradient>
+            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+          </defs>
+          <ellipse cx="410" cy="292" rx="360" ry="16" fill="#000" opacity=".7"/>
+          <path d="M60 238c0-30 22-44 62-48l118-10c48-40 100-66 178-70 80-3 140 18 192 62l92 14c40 6 58 26 58 54v18c0 8-8 14-16 14h-52a60 60 0 0 0-118 0H270a60 60 0 0 0-118 0H78c-10 0-18-7-18-16z" fill="url(#aBody)"/>
+          <path d="M262 182c42-36 90-58 152-60l8 60zM440 122c62 2 106 18 146 52l-146 8z" fill="url(#aGlass)"/>
+          <path d="M300 168l40-34M470 132l30 40" stroke="#fff" stroke-opacity=".14" stroke-width="10" stroke-linecap="round"/>
+          <path d="M92 218c120-14 420-20 650-4" stroke="url(#aShine)" stroke-width="3" fill="none"/>
+          <path d="M130 200c80-6 160-12 230-16" stroke="#fff" stroke-opacity=".35" stroke-width="1.5" fill="none"/>
+          <path d="M80 232h660M330 182v80M560 186l-6 76" stroke="#000" stroke-width="2" fill="none"/>
+          <rect x="62" y="206" width="22" height="14" rx="3" fill="#ff8a1f"/>
+          <rect x="52" y="200" width="40" height="26" rx="6" fill="#ff8a1f" opacity=".7" filter="url(#glow)"/>
+          <path d="M724 212h26c4 0 6 4 4 8l-4 6h-26z" fill="#f3f5f7"/>
+          <path d="M724 212h26c4 0 6 4 4 8l-4 6h-26z" fill="#fff" filter="url(#glow)" opacity=".8"/>
+          <g><circle cx="211" cy="278" r="50" fill="#0a0b0d"/><circle cx="211" cy="278" r="30" fill="none" stroke="#9aa3ad" stroke-width="7"/><circle cx="211" cy="278" r="8" fill="#9aa3ad"/></g>
+          <g><circle cx="629" cy="278" r="50" fill="#0a0b0d"/><circle cx="629" cy="278" r="30" fill="none" stroke="#9aa3ad" stroke-width="7"/><circle cx="629" cy="278" r="8" fill="#9aa3ad"/></g>
+        </svg>
+        </div>
+      </div>
+      <div class="squeegee" id="sq"><button type="button" id="sqBtn" aria-label="Compare before and after. Use the left and right arrow keys."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></svg></button></div>
+      <span class="bay__hint mono">Drag to compare</span>
+      <span class="bay__cap mono">Drawing · not a photo of their work</span>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div class="ticker__t">
+  <span>Paint protection film</span><span>Ceramic coating</span><span>Window tint</span><span>High-level detailing</span>
+  <span>Paint protection film</span><span>Ceramic coating</span><span>Window tint</span><span>High-level detailing</span>
+</div></div>
+
+<section class="sec" id="services" aria-labelledby="svc-h">
+  <div class="wrap">
+    <p class="kick mono" data-reveal>01 · Services</p>
+    <h2 class="h2 disp" id="svc-h" data-reveal>Four layers of <span class="a">care.</span></h2>
+    <div class="svc">
+      <figure class="stack" data-reveal>
+        <svg viewBox="20 30 540 360" role="img" aria-labelledby="stack-t">
+          <title id="stack-t">Exploded diagram of the layers on a car panel: paint, clear coat, protection film and ceramic coating</title>
+          <g font-family="JetBrains Mono, monospace" font-size="12" letter-spacing="1.5" fill="#f3f5f7">
+            <g class="lay" style="--d:0">
+              <path d="M60 300 240 360 420 300 240 240z" fill="#2a1a10" stroke="#ff8a1f" stroke-opacity=".5"/>
+              <path d="M60 300v14l180 60 180-60v-14l-180 60z" fill="#1a0f08"/>
+              <text x="430" y="322" opacity=".7">PANEL + PAINT</text>
+            </g>
+            <g class="lay" style="--d:1">
+              <path d="M60 236 240 296 420 236 240 176z" fill="#3b4652" fill-opacity=".55" stroke="#f3f5f7" stroke-opacity=".35"/>
+              <text x="430" y="256" opacity=".7">CLEAR COAT</text>
+            </g>
+            <g class="lay" style="--d:2">
+              <path d="M60 170 240 230 420 170 240 110z" fill="#ff8a1f" fill-opacity=".16" stroke="#ff8a1f"/>
+              <path d="M110 170 240 213 370 170" fill="none" stroke="#ff8a1f" stroke-opacity=".5" stroke-dasharray="4 6"/>
+              <text x="430" y="190" fill="#ffb066">PPF FILM</text>
+            </g>
+            <g class="lay" style="--d:3">
+              <path d="M60 104 240 164 420 104 240 44z" fill="#f3f5f7" fill-opacity=".08" stroke="#f3f5f7"/>
+              <g fill="#f3f5f7" fill-opacity=".85"><circle cx="190" cy="96" r="6"/><circle cx="250" cy="80" r="4.5"/><circle cx="300" cy="104" r="7"/><circle cx="220" cy="124" r="3.5"/><circle cx="160" cy="112" r="3"/></g>
+              <text x="430" y="124">CERAMIC</text>
+            </g>
+          </g>
+          <g stroke="#f3f5f7" stroke-opacity=".25" stroke-dasharray="2 5"><path d="M60 104v196M420 104v196M240 164v196"/></g>
+        </svg>
+        <dl class="legend">
+          <div><dt>Ceramic</dt><dd>Hard, glossy top layer that sheds water</dd></div>
+          <div><dt>PPF film</dt><dd>Clear shield against chips and scratches</dd></div>
+          <div><dt>Clear coat</dt><dd>The factory's thin protective layer</dd></div>
+          <div><dt>Paint</dt><dd>The colour you want to keep looking new</dd></div>
+        </dl>
+        <figcaption class="mono">Diagram · how the layers sit</figcaption>
+      </figure>
+      <ol class="list">
+        <li class="row" data-reveal><span class="n">01</span><h3>Paint protection film</h3><p>A clear, tough film laid over the paint. It takes the stone chips, light scratches and road grime so the factory paint underneath doesn't have to.</p><span class="q mono">Ask for a quote →</span></li>
+        <li class="row" data-reveal><span class="n">02</span><h3>Ceramic coating</h3><p>A liquid coating that bonds to the paint and cures into a hard, glossy layer. Water beads and rolls off, and washing gets easier.</p><span class="q mono">Ask for a quote →</span></li>
+        <li class="row" data-reveal><span class="n">03</span><h3>Window tint</h3><p>Film applied to the glass to cut glare and heat from the sun and to add privacy inside the car.</p><span class="q mono">Ask for a quote →</span></li>
+        <li class="row" data-reveal><span class="n">04</span><h3>High-level detailing</h3><p>Careful cleaning and paint care, inside and out, to bring a car back to its best, and to prepare it before film or coating goes on.</p><span class="q mono">Ask for a quote →</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="sec acc" id="accredited" aria-labelledby="acc-h">
+  <div class="wrap acc__g">
+    <div>
+      <p class="kick mono" data-reveal>02 · Accredited</p>
+      <h2 class="h2 disp" id="acc-h" data-reveal>Accredited by the <span class="a">names you know.</span></h2>
+      <blockquote data-reveal>“Better Details specializes in High-Level Detailing, Paint Protection Film Installation, Ceramic Coating, and Window Tint. Proudly accredited by STEK, GSWF, Avery, Gyeon, and X&#8209;Films.”</blockquote>
+      <cite class="mono" data-reveal>From the Better Details page</cite>
+    </div>
+    <ul class="names" data-reveal aria-label="Accreditations">
+      <li>STEK</li><li>GSWF</li><li>Avery</li><li>Gyeon</li><li class="full">X-Films</li><li class="wide">Names shown as text · as listed on their page</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="how" aria-labelledby="how-h">
+  <div class="wrap how">
+    <figure data-reveal>
+      <img src="assets/wipe.webp" width="1200" height="1080" loading="lazy" alt="A hand wiping glossy black car paint with a grey microfibre cloth">
+      <figcaption class="mono">Concept photo.</figcaption>
+    </figure>
+    <div>
+      <p class="kick mono" data-reveal>03 · How it works</p>
+      <h2 class="h2 disp" id="how-h" data-reveal>Three steps to a <span class="a">better finish.</span></h2>
+      <ol class="steps">
+        <li class="step" data-reveal><h3>Tell us your car</h3><p>Send the make, model and colour, and what you want done: film, coating, tint or a full detail.</p></li>
+        <li class="step" data-reveal><h3>Get your options</h3><p>We'll walk you through what suits your car and how you use it, with a clear quote.</p></li>
+        <li class="step" data-reveal><h3>Book your slot</h3><p>Pick a date and bring the car to our shop on Michael Rua Street.</p></li>
+      </ol>
+      <div class="ctas" data-reveal><a class="btn btn--amber" href="https://www.facebook.com/BetterDetails" target="_blank" rel="noopener">Message on Facebook<i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3C6.9 3 3 6.7 3 11.4c0 2.5 1.1 4.7 2.9 6.2V21l3.2-1.8c.9.3 1.9.4 2.9.4 5.1 0 9-3.7 9-8.3S17.1 3 12 3z"/></svg></i></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="find" aria-labelledby="find-h" style="padding-top:0">
+  <div class="wrap find__g">
+    <div class="plate" data-reveal>
+      <p class="kick mono">04 · Find us</p>
+      <div>
+        <p class="num" aria-hidden="true">19</p>
+        <h2 class="st" id="find-h">Michael Rua St.</h2>
+        <p class="ar">Brgy. Don Bosco, Parañaque</p>
+      </div>
+    </div>
+    <div class="find__r" data-reveal>
+      <p class="mono" style="color:var(--amber-2)">Address</p>
+      <p style="font-size:22px;color:var(--white);font-weight:700">19 Michael Rua St., Brgy. Don Bosco, Parañaque</p>
+      <p>Inside Better Living. Search "Better Details" in Google Maps or tap below, and message us before you come so your slot is ready.</p>
+      <div class="ctas" style="margin-top:6px"><a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Better+Details+Para%C3%B1aque" target="_blank" rel="noopener">Open in Google Maps<i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></i></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact" id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <p class="kick mono" data-reveal>05 · Contact</p>
+    <h2 class="h2 disp" id="contact-h" data-reveal>Book your<br>car in.</h2>
+    <p class="lead" data-reveal>Tell us the car and the job. We'll reply with your options and a quote.</p>
+    <div class="links">
+      <a href="tel:+639976888219" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><small>Call</small><span>0997 688 8219</span></a>
+      <a href="mailto:betterdetails.ph@gmail.com" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg><small>Email</small><span>betterdetails.ph@gmail.com</span></a>
+      <a href="https://www.facebook.com/BetterDetails" target="_blank" rel="noopener" data-reveal><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3C6.9 3 3 6.7 3 11.4c0 2.5 1.1 4.7 2.9 6.2V21l3.2-1.8c.9.3 1.9.4 2.9.4 5.1 0 9-3.7 9-8.3S17.1 3 12 3z"/></svg><small>Facebook</small><span>facebook.com/BetterDetails</span></a>
+    </div>
+    <p class="ig" data-reveal>Instagram: betterdetails.ph</p>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div>
+      <a class="logo" href="#top" aria-label="Back to top"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 2 37 11v18L20 38 3 29V11z" fill="none" stroke="#ff8a1f" stroke-width="2.5"/><path d="M13 12h9a5 5 0 0 1 0 10h-9zM13 22h10a5 5 0 0 1 0 10H13z" fill="none" stroke="#f3f5f7" stroke-width="2.5" stroke-linejoin="round" transform="translate(0 -2) scale(1 .9)"/></svg><span><b>Better Details</b></span></a>
+      <p style="margin-top:16px">Concept redesign by Jeig Torio · not the business's official website</p>
+      <p>The photo is a stock concept placeholder, not their shop or work. The car and layer drawings are concept illustrations.</p>
+    </div>
+    <ul class="nav">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#find">Find us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+<a class="callbar" id="callbar" href="tel:+639976888219"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>CALL 0997 688 8219</a>
+
+<script>
+(function(){
+  var d=document;d.documentElement.classList.add('js');
+  var all=[].slice.call(d.querySelectorAll('[data-reveal]'));
+  function show(e){e.classList.add('is-in')}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(!e.isIntersecting)return;var t=e.target;
+      var sib=[].slice.call(t.parentNode.children).filter(function(c){return c.hasAttribute('data-reveal')});
+      var i=Math.max(0,sib.indexOf(t));setTimeout(function(){show(t)},Math.min(i,5)*90);io.unobserve(t);
+    })},{threshold:.15,rootMargin:'0px 0px -5% 0px'});
+    all.forEach(function(e){io.observe(e)});
+  }else{all.forEach(show)}
+  setTimeout(function(){all.forEach(show)},3000);
+
+  /* film sweep: auto, then hand control to the visitor */
+  var bay=d.getElementById('bay'),btn=d.getElementById('sqBtn');
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var x=58,user=false,t0=null,raf;
+  function set(v){x=Math.max(4,Math.min(96,v));bay.style.setProperty('--x',x+'%');}
+  function ease(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2}
+  function loop(ts){
+    if(user)return;if(t0===null)t0=ts;
+    var c=((ts-t0)/1000)%9, v;
+    if(c<0.6)v=6; else if(c<3.6)v=6+90*ease((c-0.6)/3); else if(c<6)v=96; else if(c<8.4)v=96-90*ease((c-6)/2.4); else v=6;
+    set(v);raf=requestAnimationFrame(loop);
+  }
+  if(!reduce){set(6);raf=requestAnimationFrame(loop);}
+  function stop(){user=true;cancelAnimationFrame(raf);}
+  function fromEvent(e){var r=bay.getBoundingClientRect();set((e.clientX-r.left)/r.width*100);}
+  var drag=false;
+  bay.addEventListener('pointerdown',function(e){stop();drag=true;fromEvent(e);try{bay.setPointerCapture(e.pointerId)}catch(_){}});
+  bay.addEventListener('pointermove',function(e){if(drag)fromEvent(e)});
+  bay.addEventListener('pointerup',function(){drag=false});
+  bay.addEventListener('pointercancel',function(){drag=false});
+  btn.addEventListener('keydown',function(e){
+    if(e.key==='ArrowLeft'||e.key==='ArrowRight'){stop();set(x+(e.key==='ArrowRight'?5:-5));e.preventDefault();}
+  });
+
+  var bar=d.getElementById('callbar'),ctas=d.getElementById('heroCtas');
+  if('IntersectionObserver' in window&&ctas&&bar){
+    new IntersectionObserver(function(es){bar.classList.toggle('hide',es[0].isIntersecting)}).observe(ctas);
+  }
+})();
+</script>
+</body>
+</html>
